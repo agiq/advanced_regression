@@ -36,9 +36,24 @@ Step 6: Train test split with RFE - coupled with Ridge and Lasso regularization 
 
 
 ## Technologies Used
-- library - version 1.0
-- library - version 2.0
-- library - version 3.0
+I had to import the following libraries for this project
+
+- import numpy as np
+- import pandas as pd
+- import matplotlib.pyplot as plt
+- import seaborn as sns
+- import datetime as dt
+- from datetime import date
+- from sklearn.preprocessing import PowerTransformer
+- from sklearn.feature_selection import RFE
+- from sklearn.linear_model import Ridge, Lasso
+- from sklearn.model_selection import GridSearchCV
+- import statsmodels.api as sm
+- from statsmodels.stats.outliers_influence import variance_inflation_factor
+
+
+
+
 
 <!-- As the libraries versions keep on changing, it is recommended to mention the version of library used in this project -->
 
