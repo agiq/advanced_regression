@@ -11,11 +11,16 @@ You are required to model the price of houses with the available independent var
 
 ## General Information
 Step 1: Import the data by reading in the csv file
+
 Step 2: Understand the data using df.describe(), df.info(), df.isnull().sum(), handling of missing data, categeorical and numerical data, convert date, feature engineering, create diction mapping, determine binary variables
+
 Step 3: Clean the data - first find the pecentage of missing data.  In this case, I didn't drop any rows or columns.  I managed to replace misisng values with NA, mean/mode/or median.
+
 Step 4: Data visualization to understand the data even more so that we know if there are any outliers; see if there are any lineararity.  I use boxplot and lmplot.
 For outliers, I use IQR. Anything lies below or above upbound and lowerbound respectively will be removed. I also look at any correlation so I can determine which variables to drop.
+
 Step 5: Scale the data and create dummy variables - machines only understand numbers.  Scaling will help speed up model training and convergence
+
 Step 6: Train test split with RFE - coupled with Ridge and Lasso regularization to avoid overfitting
 
 
