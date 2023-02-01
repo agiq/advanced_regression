@@ -27,10 +27,12 @@ Step 6: Train test split with RFE - coupled with Ridge and Lasso regularization 
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
 ## Conclusions
-- Conclusion 1 from the analysis
-- Conclusion 2 from the analysis
-- Conclusion 3 from the analysis
-- Conclusion 4 from the analysis
+
+- Ridge: the coefficient changes but not significantly enough to change the order of Features. Higher alpha causes the coefficient to lower for positive value and the opposite for negative. Ridge uses Lamba as penalty. Ridge puts constraint on the coefficient (w) in the formula above. Large w will get penalized. 
+- Ridge puts constraint on the coefficient (w) in the formula above. Large w will get penalized. cLasso penalizes the sum of their absolute values.  This also known as L1 regularization; where as Ridge is L2.  Higher alpha can lead to zero coefficient; hence auto feature selection.
+- In this use case, I’d go with Ridge.  Out of the bat and without performing hyper parameter turning, Ridge 0.511 R-squared and 0.472 Adj. R-squared.  Also, the VIF value for Ridge is a lot smaller.  I have not removed any variables and retrain the model.  The result is subjected to change.
+- On the other hand, Lasso gives 0.480 R-squared and 0.470 Adj. R-squared.
+- To generalize the model, we have to discuss the diagram above.  The middle dotted line is the optimal where the model is not so complex and both bias and variance meet at an equilibrium middle section.   Highly complex model will have low bias and high variance.  The opposite is true where not so complex model will have low variance and high bias.  On the left side (high bias and low variance), the model is considered as underfitting.  Contrary, low bias high variance is overfitting. That means the model is doing very good with training data, but do poorly with real data.
 
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
@@ -57,15 +59,9 @@ I had to import the following libraries for this project
 
 <!-- As the libraries versions keep on changing, it is recommended to mention the version of library used in this project -->
 
-## Acknowledgements
-Give credit here.
-- This project was inspired by...
-- References if any...
-- This project was based on [this tutorial](https://www.example.com).
-
 
 ## Contact
-Created by [@githubusername] - feel free to contact me!
+Created by [@agiq] - feel free to contact me!
 
 
 <!-- Optional -->
